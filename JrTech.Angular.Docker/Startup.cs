@@ -67,7 +67,7 @@ namespace JrTech.Angular.Docker
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://jrtech.angular.app:4200");
                 }
             });
         }
